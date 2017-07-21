@@ -3,19 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>【设计模式】-- 适配器模式 | 一个小博客</title>
+  <title>一个小博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="示例一：给笔记本电脑充电 需求：只有两孔的插座，如何给需要三孔插座的笔记本充电？  12345678public class TwoPlug &amp;#123;		//使用两孔插座充电	public void powerWithTwo()&amp;#123;		System.out.println(&amp;quot;使用两孔插座充电，充电中。。。&amp;quot;);	&amp;#125;&amp;#125; 123456789/* *">
+  <meta name="description" content="start from zero">
 <meta property="og:type" content="website">
-<meta property="og:title" content="【设计模式】-- 适配器模式">
-<meta property="og:url" content="http://www.guonl.cn/设计模式篇/【设计模式】-适配器模式.html">
+<meta property="og:title" content="一个小博客">
+<meta property="og:url" content="http://www.guonl.cn/index.html">
 <meta property="og:site_name" content="一个小博客">
-<meta property="og:description" content="示例一：给笔记本电脑充电 需求：只有两孔的插座，如何给需要三孔插座的笔记本充电？  12345678public class TwoPlug &amp;#123;		//使用两孔插座充电	public void powerWithTwo()&amp;#123;		System.out.println(&amp;quot;使用两孔插座充电，充电中。。。&amp;quot;);	&amp;#125;&amp;#125; 123456789/* *">
+<meta property="og:description" content="start from zero">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-07-21T09:51:57.519Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【设计模式】-- 适配器模式">
-<meta name="twitter:description" content="示例一：给笔记本电脑充电 需求：只有两孔的插座，如何给需要三孔插座的笔记本充电？  12345678public class TwoPlug &amp;#123;		//使用两孔插座充电	public void powerWithTwo()&amp;#123;		System.out.println(&amp;quot;使用两孔插座充电，充电中。。。&amp;quot;);	&amp;#125;&amp;#125; 123456789/* *">
+<meta name="twitter:title" content="一个小博客">
+<meta name="twitter:description" content="start from zero">
   
     <link rel="alternate" href="/atom.xml" title="一个小博客" type="application/atom+xml">
   
@@ -68,9 +67,11 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-【设计模式】-适配器模式" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/设计模式篇/【设计模式】-适配器模式.html" class="article-date">
+    <a href="/2017/07/21/【设计模式】-适配器模式/" class="article-date">
   <time datetime="2017-07-21T09:51:05.000Z" itemprop="datePublished">2017-07-21</time>
 </a>
     
@@ -81,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      【设计模式】-- 适配器模式
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/21/【设计模式】-适配器模式/">【设计模式】-- 适配器模式</a>
     </h1>
   
 
@@ -122,15 +123,78 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.guonl.cn/设计模式篇/【设计模式】-适配器模式.html" data-id="cj5doyxdc0004gwweq2alldc0" class="article-share-link">Share</a>
+      <a data-url="http://www.guonl.cn/2017/07/21/【设计模式】-适配器模式/" data-id="cj5doyxd80002gwwe2o6sc7h4" class="article-share-link">Share</a>
       
       
     </footer>
   </div>
   
+</article>
+
+
+  
+    <article id="post-【设计模式】-单例模式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/21/【设计模式】-单例模式/" class="article-date">
+  <time datetime="2017-07-21T09:50:11.000Z" itemprop="datePublished">2017-07-21</time>
+</a>
     
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/21/【设计模式】-单例模式/">【设计模式】-- 单例模式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="单例模式Singleton"><a href="#单例模式Singleton" class="headerlink" title="单例模式Singleton"></a>单例模式Singleton</h1><blockquote>
+<ul>
+<li>应用场合：有些对象只需要一个就足够了，如古代的皇帝、老婆</li>
+<li>作用：保证整个应用程序中某个实例有且只有一个</li>
+<li>类型：饿汉式、懒汉式</li>
+</ul>
+</blockquote>
+<h1 id="下定义，什么是饿汉懒汉式？"><a href="#下定义，什么是饿汉懒汉式？" class="headerlink" title="下定义，什么是饿汉懒汉式？"></a>下定义，什么是饿汉懒汉式？</h1><blockquote>
+<ul>
+<li><p>饿汉模式：只要类一加载，它就开始初始化，永远都是没有吃饱，所以叫饿汉式</p>
+</li>
+<li><p>懒汉模式：当类加载的时候，比并没有初始化实例，而是在用户获取的时候才初始化，所以叫 懒汉式</p>
+</li>
+</ul>
+</blockquote>
+<p>#区别</p>
+<blockquote>
+<ul>
+<li>饿汉模式，类的加载比较慢，但是运行获取对象的速度比较快，线程是安全的</li>
+<li>懒汉模式，类的加载比较快，但是运行获取对象的速度比较慢，线程不安全</li>
+</ul>
+</blockquote>
+<h3 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">//饿汉模式</div><div class="line">public class EagerSingleton &#123;</div><div class="line">	</div><div class="line">	//1、将构造方法私有化，不允许外部直接创建对象</div><div class="line">	private EagerSingleton() &#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	//2、创建类的唯一实例，使用private static变成为类的静态成员</div><div class="line">	private static EagerSingleton instance = new EagerSingleton();</div><div class="line">	</div><div class="line">	//3、提供一个获取实例的方法，使用public static修饰</div><div class="line">	public static EagerSingleton getInstance()&#123;</div><div class="line">		</div><div class="line">		return instance;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="懒汉式"><a href="#懒汉式" class="headerlink" title="懒汉式"></a>懒汉式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">//懒汉模式</div><div class="line">public class LazySingleton &#123;</div><div class="line">	</div><div class="line">	//1、将构造方法私有化，不允许外部直接创建对象</div><div class="line">	private LazySingleton() &#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	//2、创建类的唯一实例，使用private static变成为类的静态成员</div><div class="line">	private static LazySingleton instance;</div><div class="line">	</div><div class="line">	//3、提供一个获取实例的方法，使用public static修饰</div><div class="line">	public static LazySingleton getInstance()&#123;</div><div class="line">		</div><div class="line">		if(instance == null)&#123;</div><div class="line">			instance = new LazySingleton();</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		return instance;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">//测试</div><div class="line">public class TestSingleton &#123;</div><div class="line">	</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		</div><div class="line">		//饿汉式</div><div class="line">		EagerSingleton s1 = EagerSingleton.getInstance();</div><div class="line">		EagerSingleton s2 = EagerSingleton.getInstance();</div><div class="line">		</div><div class="line">		if (s1 == s2) &#123;</div><div class="line">			System.out.println(&quot;s1和s2是同一个实例&quot;);</div><div class="line">		&#125;else&#123;</div><div class="line">			System.out.println(&quot;s1和s2不是同一个实例&quot;);</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		//懒汉式</div><div class="line">		LazySingleton s3 = LazySingleton.getInstance();</div><div class="line">		LazySingleton s4 = LazySingleton.getInstance();</div><div class="line">		</div><div class="line">		if (s3 == s4) &#123;</div><div class="line">			System.out.println(&quot;s3和s4是同一个实例&quot;);</div><div class="line">		&#125;else&#123;</div><div class="line">			System.out.println(&quot;s3和s4不是同一个实例&quot;);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="输出结果"><a href="#输出结果" class="headerlink" title="输出结果"></a>输出结果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">s1和s2是同一个实例</div><div class="line">s3和s4是同一个实例</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.guonl.cn/2017/07/21/【设计模式】-单例模式/" data-id="cj5doyxcw0000gwwet51qhyl4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
   
 </article>
+
+
+  
 
 </section>
         
