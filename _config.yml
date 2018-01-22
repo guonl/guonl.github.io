@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: https://www.guonl.cn
 date_format: "ordinal"
-title: Blog_龙飞
+title: Blog_晴岚
 subtitle: "谦和之中见卓越"
-description: "郑龙飞的个人博客"
-keywords: java, longfeizheng, longfei
+description: "Lanny的个人博客"
+keywords: java, spring, html
 favicon: /favicon.ico
 timezone: Asia/BeiJing
 encoding: "utf-8"
@@ -16,12 +16,12 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: 郑龙飞
+author: Lanny
 organization: ZiHeXin, Inc.
-organization_url: https://www.zihexin.net/
-github_username: longfeizheng
+organization_url: https://www.guonl.cn/
+github_username: guonl
 location: Beijing, China
-email: i@merryyou.cn
+email: guonianlei@126.com
 
 # ---------------- #
 #    Navigation    #
@@ -87,7 +87,7 @@ repository: longfeizheng/longfeizheng.github.io
 comments_provider: netease_gentie
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
-disqus_username: zhenglongfei
+disqus_username: guonl
 netease_gentie_key: 6903995d521c4ebaa2676ee3c2f89599
 # 在使用网易云跟帖时可点击显示 Disqus
 lazy_load_disqus : true
