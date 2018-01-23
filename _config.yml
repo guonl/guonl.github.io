@@ -5,11 +5,11 @@ baseurl:
 url: https://www.guonl.cn
 date_format: "ordinal"
 title: Blog_晴岚
-subtitle: "谦和之中见卓越"
+subtitle: "总要留一下一些脚印，以方便找到来时的路……"
 description: "Lanny的个人博客"
 keywords: java, spring, html
 favicon: /favicon.ico
-timezone: Asia/BeiJing
+timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
@@ -17,10 +17,10 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: Lanny
-organization: ZiHeXin, Inc.
+organization: None
 organization_url: https://www.guonl.cn/
 github_username: guonl
-location: Beijing, China
+location: Shanghai, China
 email: guonianlei@126.com
 
 # ---------------- #
@@ -78,7 +78,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: longfeizheng/longfeizheng.github.io
+repository: guonl/guonl.github.io
 
 # ---------------- #
 #      Comments    #

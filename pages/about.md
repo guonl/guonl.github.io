@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About
-description: 谦和之中见卓越
-keywords: longfeizheng
+description: 总要留一下一些脚印，以方便找到来时的路……
+keywords: Lanny
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-谦和之中见卓越
+总要留一下一些脚印，以方便找到来时的路……
 
 ## 联系
 
