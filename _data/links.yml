@@ -4,11 +4,11 @@
 #- name: hsweb企业后台管理系统基础框架
 #  url: http://www.hsweb.me/
 
-- name: Lanny
+- name: Lanny的博客
   url: http://www.guonl.cn/
 
 #- name: 码志
 #  url: http://mazhuang.org
   
-  name: 晴岚
-  url: guonl.github.io
+- name: 我的GitHub
+  url: https://github.com/guonl
