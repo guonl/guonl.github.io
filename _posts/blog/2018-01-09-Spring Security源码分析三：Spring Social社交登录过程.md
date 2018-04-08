@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Spring Security源码分析三：Spring Social实现QQ社交登录 
-categories: Spring Security
-description: Spring Security
-keywords: Spring Security
+categories: SpringSecurity
+description: SpringSecurity
+keywords: SpringSecurity
 ---
 > 社交登录又称作社会化登录（Social Login），是指网站的用户可以使用腾讯QQ、人人网、开心网、新浪微博、搜狐微博、腾讯微博、淘宝、豆瓣、MSN、Google等社会化媒体账号登录该网站。
 

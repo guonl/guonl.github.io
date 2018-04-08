@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Spring Security源码分析九：Spring Security Session管理
-categories: Spring Security
-description: Spring Security
-keywords: Spring Security
+categories: SpringSecurity
+description: SpringSecurity
+keywords: SpringSecurity
 ---
 > Session:在计算机中，尤其是在网络应用中，称为“会话控制”。Session 对象存储特定用户会话所需的属性及配置信息。这样，当用户在应用程序的 Web 页之间跳转时，存储在 Session 对象中的变量将不会丢失，而是在整个用户会话中一直存在下去。当用户请求来自应用程序的 Web 页时，如果该用户还没有会话，则 Web 服务器将自动创建一个 Session 对象。当会话过期或被放弃后，服务器将终止该会话。Session 对象最常见的一个用法就是存储用户的首选项。
 

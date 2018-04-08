@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Spring Security源码分析七：Spring Security 记住我
-categories: Spring Security
-description: Spring Security
-keywords: Spring Security
+categories: SpringSecurity
+description: SpringSecurity
+keywords: SpringSecurity
 ---
 > 有这样一个场景——有个用户初访并登录了你的网站，然而第二天他又来了，却必须再次登录。于是就有了“记住我”这样的功能来方便用户使用，然而有一件不言自明的事情，那就是这种认证状态的”旷日持久“早已超出了用户原本所需要的使用范围。这意味着，他们可以关闭浏览器，然后再关闭电脑，下周或者下个月，乃至更久以后再回来，只要这间隔时间不要太离谱，该网站总会知道谁是谁，并一如既往的为他们提供所有相同的功能和服务——与许久前他们离开的时候别无二致。
 

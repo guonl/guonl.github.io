@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Spring Security源码分析五：Spring Security实现短信登录
-categories: Spring Security
-description: Spring Security
-keywords: Spring Security
+categories: SpringSecurity
+description: SpringSecurity
+keywords: SpringSecurity
 ---
 > 目前常见的社交软件、购物软件、支付软件、理财软件等，均需要用户进行登录才可享受软件提供的服务。目前主流的登录方式主要有 3 种：账号密码登录、短信验证码登录和第三方授权登录。我们已经实现了账号密码和第三方授权登录。本章我们将使用`Spring Security`实现短信验证码登录。
 

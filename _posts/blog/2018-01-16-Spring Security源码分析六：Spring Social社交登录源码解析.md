@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Spring Security源码分析六：Spring Social社交登录源码解析
-categories: Spring Security
-description: Spring Security
-keywords: Spring Security
+categories: SpringSecurity
+description: SpringSecurity
+keywords: SpringSecurity
 ---
 > 在[Spring Security源码分析三：Spring Social实现QQ社交登录](https://longfeizheng.github.io/2018/01/09/Spring-Security%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B8%89-Spring-Social%E7%A4%BE%E4%BA%A4%E7%99%BB%E5%BD%95%E8%BF%87%E7%A8%8B/)和[Spring Security源码分析四：Spring Social实现微信社交登录](https://longfeizheng.github.io/2018/01/12/Spring-Security%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E5%9B%9B-Spring-Social%E7%A4%BE%E4%BA%A4%E7%99%BB%E5%BD%95%E8%BF%87%E7%A8%8B/)这两章中，我们使用`Spring Social`已经实现了国内最常用的`QQ`和`微信`社交登录。本章我们来简单分析一下`Spring Social`在社交登录的过程中做了哪些事情？（`微博`社交登录也已经实现，由于已经连续两篇介绍社交登录，所以不在单开一章节描述）
 
