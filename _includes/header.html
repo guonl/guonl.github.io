@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/assets/vendor/share.js/dist/css/share.min.css">
     <link rel="stylesheet" href="/assets/css/globals/responsive.css">
     <link rel="stylesheet" href="/assets/css/posts/index.css">
+    <link rel="stylesheet" href="/assets/css/table/table.css">
     <!-- Latest compiled and minified CSS -->
     {% for css in page.css %}
     <link rel="stylesheet" href="/assets/css/{{css}}">
@@ -68,7 +69,8 @@
     {% endif %}
     <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
-    <script src="/assets/js/mermaid.full.min.js"></script>
+    <!--<script src="/assets/js/mermaid.full.min.js"></script>-->
+    <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.6/mermaid.min.js"></script>
     <script type="text/javascript">
     function toggleMenu() {
         var nav = document.getElementsByClassName("site-header-nav")[0];
@@ -79,19 +81,6 @@
         }
     }
     </script>
-    <!--<style>-->
-      <!--table{-->
-        <!--border-left:1px solid #000000;border-top:1px solid #000000;-->
-        <!--width: 100%;-->
-        <!--word-wrap:break-word; word-break:break-all;-->
-        <!--}-->
-      <!--table th{-->
-          <!--text-align:center;-->
-        <!--}-->
-      <!--table th,td{-->
-        <!--border-right:1px solid #000000;border-bottom:1px solid #000000;-->
-      <!--}-->
-    <!--</style>-->
 </head>
 <body class="{{ page.class }}" data-mz="{{ page.class }}">
     <header class="site-header">
