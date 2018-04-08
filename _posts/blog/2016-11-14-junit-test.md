@@ -36,10 +36,12 @@ keywords: Junit, 断言, 测试
 | @Rule  | 允许灵活添加或重新定义测试类中的每个测试方法的行为  |
 | @FixMethodOrder  | 指定测试方法的执行顺序  |
 
-	一个测试类单元测试的执行顺序为：
-	@BeforeClass –> @Before –> @Test –> @After –> @AfterClass
-	每一个测试方法的调用顺序为：
-	@Before –> @Test –> @After
+```
+一个测试类单元测试的执行顺序为：
+@BeforeClass –> @Before –> @Test –> @After –> @AfterClass
+每一个测试方法的调用顺序为：
+@Before –> @Test –> @After
+```
 
 参考链接
 
