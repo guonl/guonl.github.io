@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Docker容器化应用日志中心 -- ELK的搭建
-categories: Java
-description: Java transient关键字解析
-keywords: Java,java,transient
+categories: Docker系列
+description: Docker容器化应用日志中心 -- ELK的搭建
+keywords: docker,ELK,nginx,redis
 ---
 
 ## 前言
