@@ -34,7 +34,7 @@ keywords: docker,ELK,nginx,redis
 修改Rsyslog服务配置文件：
 
 
-```
+```shell
 vim /etc/rsyslog.conf
 ```
 
@@ -42,7 +42,7 @@ vim /etc/rsyslog.conf
 开启下面三个参数：
 
 
-```
+```shell
 $ModLoad imtcp
 
 $InputTCPServerRun 514
@@ -53,13 +53,13 @@ $InputTCPServerRun 514
 
 然后重启Rsyslog服务
 
-```
+```shell
 systemctl restart rsyslog
 ```
 
 查看rsyslog启动状态：
 
-```
+```shell
 netstat -tnl
 ```
 
@@ -70,7 +70,7 @@ netstat -tnl
 ## 部署ElasticSearch服务
 
 启动ElasticSearch容器
-```
+```shell
 docker run -d  -p 9200:9200 \
  -v $PWD/elasticsearch/data:/usr/share/elasticsearch/data \
  --name elasticsearch hub.c.163.com/library/elasticsearch
@@ -84,7 +84,7 @@ docker run -d  -p 9200:9200 \
 因为Logstash的配置文件需要自定义，所以我们需要定制化一个符合自己需求的镜像，
 创建Dockerfile，添加下面的内容：
 
-```
+```shell
 FROM hub.c.163.com/library/logstash
 MAINTAINER guonl 983220871@qq.com
 COPY logstash.conf /etc/logstash.conf
@@ -92,7 +92,7 @@ COPY logstash.conf /etc/logstash.conf
 
 在当前文件夹下面创建logstash.conf，添加内容如下：
 
-```
+```shell
 input {
   syslog {
     type => "rsyslog"
@@ -109,12 +109,12 @@ output {
 
 构建自己的logstash镜像
 
-```
+```shell
 docker build -t guonl/logstash:latest .
 ```
 这个镜像只是简单地修改了一下配置文件而已，之后启动容器
 
-```
+```shell
 docker run -d -p 4560:4560 \
 --link elasticsearch:elasticsearch \
 --name logstash guonl/logstash \
@@ -123,7 +123,7 @@ logstash -f /etc/logstash.conf
 
 ## 部署Kibana服务
 
-```
+```shell
 docker run -d -p 5601:5601 \
 --link elasticsearch:elasticsearch \
 -e ELASTICSEARCH_URL=http://elasticsearch:9200 \
@@ -131,7 +131,7 @@ docker run -d -p 5601:5601 \
 ```
  我们查看服务的进程和docker的log
  
-```
+```shell
 docker ps
 docker logs logstash
 docker logs kibana
@@ -144,7 +144,7 @@ docker logs kibana
 ## 启动Nginx容器来生产日志
 
 
-```
+```shell
 docker run -d -p 90:80 --log-driver syslog --log-opt \
 syslog-address=tcp://localhost:514 \
 --log-opt tag="nginx" --name nginx nginx
@@ -179,7 +179,7 @@ syslog-address=tcp://localhost:514 \
 
 ## 部署nginx服务
 
-```
+```shell
 docker run -d -p 6379:6379 --name redis hub.c.163.com/library/redis
 ```
 
@@ -190,7 +190,8 @@ docker run -d -p 6379:6379 --name redis hub.c.163.com/library/redis
 logstash.conf配置文件修改，修改成数据源来自redis
 
 vim logstash.conf
-```
+
+```shell
 input {
     redis {
         data_type => "list" #使用redis的list类型存储数据
@@ -212,7 +213,7 @@ output {
 
 注意启动指令和之前的不同：
 
-```
+```shell
 docker run -d -p 4560:4560 \
 --link elasticsearch:elasticsearch \
 --link redis:redis \  # 关联redis容器
@@ -224,7 +225,7 @@ logstash -f /etc/logstash.conf
 
 java客户端代码
 
-```
+```java
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
