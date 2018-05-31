@@ -36,7 +36,7 @@ keywords: SpringSecurity
 ```
 
 ### 效果如下
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-logout.gif](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-logout.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-logout.gif")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-logout.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-logout.gif")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-logout.gif](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-logout.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-logout.gif")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-logout.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-logout.gif")
 
 ### 源码分析
 #### LogoutFilter#doFilter
@@ -69,7 +69,7 @@ public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
 3. 重定向到登录界面
 
 #### handler
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-LogoutFilter.png](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-LogoutFilter.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-LogoutFilter.png")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-LogoutFilter.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-LogoutFilter.png")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-LogoutFilter.png](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-LogoutFilter.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-LogoutFilter.png")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-LogoutFilter.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-LogoutFilter.png")
 
 1. `CookieClearingLogoutHandler`清空`Cookie`
 2. `PersistentTokenBasedRememberMeServices`清空`remember-me`

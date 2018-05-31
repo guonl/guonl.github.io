@@ -41,7 +41,7 @@ http.
 ```
 
 效果如下:
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-sessionTimeout.gif](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-sessionTimeout.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-sessionTimeout.gif")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-sessionTimeout.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-sessionTimeout.gif")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-sessionTimeout.gif](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-sessionTimeout.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-sessionTimeout.gif")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-sessionTimeout.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-sessionTimeout.gif")
 
 ### Session的并发策略
 
@@ -67,7 +67,7 @@ public class MerryyounExpiredSessionStrategy implements SessionInformationExpire
 ```
 
 效果如下：
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session01.gif](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session01.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session01.gif")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session01.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session01.gif")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session01.gif](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session01.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session01.gif")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session01.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session01.gif")
 
 当`maxSessionsPreventsLogin(true)`可参考：[Spring-Security](https://github.com/spring-projects/spring-security/issues/3078)和[security-oauth2](https://github.com/longfeizheng/security-oauth2)
 
@@ -106,7 +106,7 @@ java -jar spring-security.jar --server.port=8081
 ```
 效果如下：
 
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session02.gif](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session02.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session02.gif")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session02.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/Spring-Security-session02.gif")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session02.gif](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session02.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session02.gif")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session02.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/Spring-Security-session02.gif")
 
 关于更多Spring Session可参考：[程序猿DD](http://blog.didispace.com/tags/Spring-Session/)
 

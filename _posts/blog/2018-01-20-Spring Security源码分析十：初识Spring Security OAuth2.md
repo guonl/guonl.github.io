@@ -135,7 +135,7 @@ keywords: SpringSecurity
 授权链接：
 [http://localhost:9090/oauth/authorize?response_type=code&client_id=merryyou&redirect_uri=http://merryyou.cn&scope=all](http://localhost:9090/oauth/authorize?response_type=code&client_id=merryyou&redirect_uri=http://merryyou.cn&scope=all "http://localhost:9090/oauth/authorize?response_type=code&client_id=merryyou&redirect_uri=http://merryyou.cn&scope=all")
 
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oauth201.gif](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oauth201.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oauth201.gif")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oauth201.gif "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oauth201.gif")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oauth201.gif](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oauth201.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oauth201.gif")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oauth201.gif "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oauth201.gif")
 
 测试类打印`accessToken`信息
 
@@ -156,7 +156,7 @@ keywords: SpringSecurity
 
 ## spring security oauth2 登录核心源码 ##
 
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oatuh202.png](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oatuh202.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oatuh202.png")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oatuh202.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-oatuh202.png")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oatuh202.png](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oatuh202.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oatuh202.png")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oatuh202.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-oatuh202.png")
 
 ### TokenEndpoint
 ```java
@@ -224,9 +224,9 @@ keywords: SpringSecurity
 	}
 ```
 #### ClientDetails
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth203.png](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth203.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth203.png")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth203.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth203.png")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth203.png](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth203.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth203.png")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth203.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth203.png")
 #### TokenRequest
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png")
 
 ### CompositeTokenGranter#grant
 ```java
@@ -242,7 +242,7 @@ keywords: SpringSecurity
 	}
 ```
 #### tokenGranters
-[![https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png")](https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/longfeizheng/longfeizheng.github.io/master/images/security/spring-security-OAuth204.png")
+[![https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png")](https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png "https://raw.githubusercontent.com/guonl/guonl.github.io/master/images/security/spring-security-OAuth204.png")
 
 ### AbstractTokenGranter#grant
 ```java
