@@ -150,13 +150,13 @@ public class LogsRecordAspect {
 
 	@Before(value = "allPointcut()")
 	public void beforeMethod(JoinPoint joinPoint) {
-		request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-		url = request.getRequestURI();
-		// session = SecurityUtils.getSubject().getSession();
-		session = request.getSession();
-		if (session == null) {
-			return;
-		}
+		// request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+		// url = request.getRequestURI();
+		// // session = SecurityUtils.getSubject().getSession();
+		// session = request.getSession();
+		// if (session == null) {
+		// 	return;
+		// }
 	}
 
 	@AfterReturning(value = "logsPointcutSearch()", argNames = "returnValue", returning = "returnValue")
